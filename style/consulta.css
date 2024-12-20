@@ -1,0 +1,121 @@
+.consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em;
+    padding-bottom: 2.285em;
+}
+
+.consultas__titulo {
+    font-size: 16px;
+    font-weight: var(--weight-bold);
+    color: var(--cor-texto);
+    padding: 0.8em 0 0.8em 1em;
+}
+
+.paciente {
+    background: var(--backround2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.464em 0 1.178em 1.142em;
+    width: 85vw;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.paciente__principal {
+    background: var(--backround2);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin:0 1em; 
+}   
+
+.paciente__foto {
+    width: 32px;
+    border-radius: 100%;
+}
+
+.paciente__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.paciente__nome {
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-weight: var(--weight-bold);
+}
+
+.paciente__local {
+    color: var(--cor-texto-claro);
+}
+
+.icone__camera {
+    padding-right: 0.5em;
+}
+
+.img__chat {
+    width: 32px;
+    padding-right: 1.14em;
+}
+
+.paciente__secundario {
+    display: flex;
+    flex-direction: column;
+    background: var(--backround2);
+    padding: 0.642em 0 1.142em 1.142em;
+    width: 85vw;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.horario {
+    color: var(--cor-texto);
+    font-size: 12px;
+    font-weight: var(--weight-medium);
+    padding-bottom: 0.571em;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    padding-right: 1.142em;
+    gap: 1.285em;    
+}
+
+.botao__video,
+.botao__audio {
+    height: 3.5em;
+    width: 10em;
+    border-radius: 8px;
+}
+
+.botao__video {
+    background: var(--cor-botao-video);
+    border: none;
+    color: var(--cor-branco);
+    font-size: 14px;
+    font-weight: var(--weight-medium);    
+}
+
+.botao__audio {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-botao-borda-voz);
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-weight: var(--weight-medium);
+}
+
+.botao__endereço {
+    background-color: var(--cor-botao-endereço);
+    height: 3.5em;
+    width: 80vw;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: var(--weight-medium);
+    color: var(--cor-branco);
+}

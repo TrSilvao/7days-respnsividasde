@@ -1,0 +1,25 @@
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    margin: 2.666em 0 1.5em 1.142em;
+    gap: 1em;
+}
+
+.cabeçalho__img {
+    width: 57px;
+    border-radius: 100%;
+}
+
+.cabeçalho__conteudo {
+    padding-right: 7.5em;
+}
+
+.cabeçalho__titulo {
+    font-size: 22px;
+    font-weight: var(--weight-bold);
+    color: var(--cor-texto)
+}
+
+.cabeçalho__texto {
+    color: var(--cor-texto-claro);
+}
