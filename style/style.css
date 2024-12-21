@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 @import url("/style/cabeçalho.css");
 @import url("/style/consulta.css");
+@import url("/style/rodape.css");
 
 :root {
     --backround: #ECECEC;
@@ -22,4 +23,5 @@ body {
     font-family: var(--font);
     font-size: 14px;
     font-weight: var(--weight-regular);
+    padding-bottom: 10em;
 }

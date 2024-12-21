@@ -1,0 +1,119 @@
+.botao__plus {
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+}
+
+.botao__mais {
+    width: 5em;
+    height: 5em;
+    background-image: url("../assets/adicionar\ fab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    border: 1px solid var(--cor-botao-borda-voz);
+    border-radius: 100%;
+}
+
+.botao__new-endereço {
+    width: 5em;
+    height: 5em;
+    background-image: url("../assets/pin\ fab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    border: 1px solid var(--cor-botao-borda-voz);
+    border-radius: 100%;
+}
+
+.botao__new-video {
+    width: 5em;
+    height: 5em;
+    background-image: url("../assets/camera\ fab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    border: 1px solid var(--cor-botao-borda-voz);
+    border-radius: 100%;
+}
+
+.botao__mais-checkbox:checked ~ .botoes__plus-ativo {
+    display: block;
+}
+
+.botoes__plus-ativo {
+    position:absolute;
+    bottom: 100%;
+}
+
+.rodape {
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background: var(--cor-branco);
+    padding-top: 1em;
+    justify-content: space-around;
+}
+
+.botoes__plus-ativo,
+.botao__mais-checkbox,
+.rodape__botao-calendario,
+.rodape__botao-clientes,
+.rodape__botao-relatorio,
+.rodape__botao-menu,
+.botao__mais__botao {
+    display: none;
+}
+
+.rodape__calendario {
+    width: 4em;
+    height: 4em;
+    background-image: url("../assets/calendario\ inativo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.rodape__clientes {
+    width: 4em;
+    height: 4em;
+    background-image: url("../assets/cliente\ inativo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.rodape__relatorio {
+    width: 4em;
+    height: 4em;
+    background-image: url("../assets/relatorios\ \ inativo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.rodape__menu {
+    width: 4em;
+    height: 4em;
+    background-image: url("../assets/menu\ \ inativo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.rodape__botao-calendario:checked ~ .rodape__rotulo > .rodape__calendario {
+    background-image: url("../assets/calendario\ ativo.svg");
+}
+
+.rodape__botao-clientes:checked ~ .rodape__rotulo > .rodape__clientes {
+    background-image: url("../assets/cliente\ ativo.svg");
+}
+
+.rodape__botao-relatorio:checked ~ .rodape__rotulo > .rodape__relatorio {
+    background-image: url("../assets/relatorios\ \ ativo.svg");
+}
+
+.rodape__botao-menu:checked ~ .rodape__rotulo > .rodape__menu {
+    background-image: url("../assets/menu\ ativo.svg");
+}
