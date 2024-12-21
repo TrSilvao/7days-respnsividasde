@@ -1,3 +1,15 @@
+.tela__escura {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-preto);
+    opacity: 60%;
+    z-index: 999;
+}
+
 .botao__plus {
     position: fixed;
     bottom: 15%;
@@ -37,6 +49,17 @@
     border-radius: 100%;
 }
 
+.botao__new-remover {
+    width: 5em;
+    height: 5em;
+    background-image: url("../assets/remover\ fab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    border: 1px solid var(--cor-botao-borda-voz);
+    border-radius: 100%;
+}
+
 .botao__mais-checkbox:checked ~ .botoes__plus-ativo {
     display: block;
 }
@@ -44,6 +67,15 @@
 .botoes__plus-ativo {
     position:absolute;
     bottom: 100%;
+}
+
+#mais:checked ~ .tela__escura {
+    display: block;
+}
+
+.botao__mais-checkbox:checked ~ .botao__plus, .botoes__plus-ativo {
+    display: block;
+    z-index: 999; /* Garante que o menu fique acima da tela escura */
 }
 
 .rodape {
