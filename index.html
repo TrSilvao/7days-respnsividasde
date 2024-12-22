@@ -28,13 +28,13 @@
 
     </header>
 
-    <main>
+    <main class="conteudo">
 
-        <h2 class="consultas__titulo">Hoje</h2>
+        <h2 class="consultas__titulo header">Hoje</h2>
 
-        <section class="consultas">  <!--dois botoes -->
+        <section class="consultas">
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -55,7 +55,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario  main">
 
                 <h4 class="horario">14:00 - 15:00 (1 hora)</h4>
 
@@ -71,9 +71,9 @@
 
         </section>   
          
-        <section class="consultas">  <!--um botao -->
+        <section class="consultas">
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -94,7 +94,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">16:00 - 17:00 (1 hora)</h4>
 
@@ -108,9 +108,9 @@
 
         </section>  
 
-        <section class="consultas">  <!--dois botoes -->
+        <section class="consultas">
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -131,7 +131,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">17:20 - 18:00 (40 minutos)</h4>
 
@@ -147,11 +147,9 @@
 
         </section> 
 
-        <h2 class="consultas__titulo">Amanha</h2>
+        <section class="consultas">
 
-        <section class="consultas">  <!--um botao -->
-
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -172,7 +170,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">18:00 - 19:00 - (1 hora)</h4>
 
@@ -186,9 +184,11 @@
 
         </section>
 
-        <section class="consultas">  <!--dois botoes -->
+        <h2 class="consultas__titulo header">Amanha</h2>
 
-            <div class="paciente">
+        <section class="consultas">  <!--14:00 - 15:00-->
+
+            <div class="paciente main"> 
 
                 <div class="paciente__principal">
     
@@ -209,7 +209,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">14:00 - 15:00 (1 hora)</h4>
 
@@ -225,48 +225,9 @@
 
         </section>
 
-        <section class="consultas">  <!--dois botoes -->
+        <section class="consultas">  <!--16:00 - 17:00 -->
 
-            <div class="paciente">
-
-                <div class="paciente__principal">
-    
-                    <img class="paciente__foto" src="assets/perfil-4.svg" alt="foto de perfil do paciente">
-        
-                    <div class="paciente__info">
-                                
-                        <h3 class="paciente__nome">Marcos Correia</h3>
-        
-                        <samp class="paciente__local"><img class="icone__camera" src="assets/Camera.svg" alt=" icone de camera">Consulta remota</samp>
-                                
-                    </div>     
-
-                </div>  
-                
-                
-                <img class="img__chat" src="assets/Chatcirculo1.svg" alt="icone para abrir um chate de texto">
-
-            </div>
-
-            <div class="paciente__secundario">
-
-                <h4 class="horario">17:20 - 18:00 (40 minutos)</h4>
-
-                <div class="botoes">
-
-                    <button class="botao__video">Ligar por vídeo</button>
-
-                    <button class="botao__audio">Ligar por áudio</button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="consultas">  <!--um botao -->
-
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -287,7 +248,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">16:00 - 17:00 (1 hora)</h4>
 
@@ -299,13 +260,50 @@
 
             </div>
 
-        </section>  
+        </section> 
 
-        <h2 class="consultas__titulo">Quarta-feira</h2>
+        <section class="consultas">  <!--17:20 - 18:00 -->
 
-        <section class="consultas">  <!--um botao -->
+            <div class="paciente main">
 
-            <div class="paciente">
+                <div class="paciente__principal">
+    
+                    <img class="paciente__foto" src="assets/perfil-4.svg" alt="foto de perfil do paciente">
+        
+                    <div class="paciente__info">
+                                
+                        <h3 class="paciente__nome">Marcos Correia</h3>
+        
+                        <samp class="paciente__local"><img class="icone__camera" src="assets/Camera.svg" alt=" icone de camera">Consulta remota</samp>
+                                
+                    </div>     
+
+                </div>  
+                
+                
+                <img class="img__chat" src="assets/Chatcirculo1.svg" alt="icone para abrir um chate de texto">
+
+            </div>
+
+            <div class="paciente__secundario main">
+
+                <h4 class="horario">17:20 - 18:00 (40 minutos)</h4>
+
+                <div class="botoes">
+
+                    <button class="botao__video">Ligar por vídeo</button>
+
+                    <button class="botao__audio">Ligar por áudio</button>
+
+                </div>
+
+            </div>
+
+        </section> 
+
+        <section class="consultas">
+
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -326,7 +324,46 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
+
+                <h4 class="horario">18:00 - 19:00 - (1 hora)</h4>
+
+                <div class="botoes">
+
+                    <button class="botao__endereço">Ver endereço</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <h2 class="consultas__titulo header">Quarta-feira</h2>
+
+        <section class="consultas">  <!--um botao -->
+
+            <div class="paciente main">
+
+                <div class="paciente__principal">
+    
+                    <img class="paciente__foto" src="assets/perfil-5.svg" alt="foto de perfil do paciente">
+        
+                    <div class="paciente__info">
+                                
+                        <h3 class="paciente__nome">Clara Lemos</h3>
+        
+                        <samp class="paciente__local"><img class="icone__camera" src="assets/pin.svg" alt=" icone de camera">Consulta no local</samp>
+                                
+                    </div>     
+
+                </div>  
+                
+                
+                <img class="img__chat" src="assets/Chatcirculo1.svg" alt="icone para abrir um chate de texto">
+
+            </div>
+
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">18:00 - 19:00 - (1 hora)</h4>
 
@@ -342,7 +379,7 @@
 
         <section class="consultas">  <!--dois botoes -->
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -363,7 +400,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">14:00 - 15:00 (1 hora)</h4>
 
@@ -381,7 +418,7 @@
 
         <section class="consultas">  <!--dois botoes -->
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -402,7 +439,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">17:20 - 18:00 (40 minutos)</h4>
 
@@ -420,7 +457,7 @@
 
         <section class="consultas">  <!--um botao -->
 
-            <div class="paciente">
+            <div class="paciente main">
 
                 <div class="paciente__principal">
     
@@ -441,7 +478,7 @@
 
             </div>
 
-            <div class="paciente__secundario">
+            <div class="paciente__secundario main">
 
                 <h4 class="horario">16:00 - 17:00 (1 hora)</h4>
 

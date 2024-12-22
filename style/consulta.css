@@ -55,6 +55,8 @@
 
 .icone__camera {
     padding-right: 0.5em;
+    width: 16px;
+    height: 16px;
 }
 
 .img__chat {
@@ -118,4 +120,25 @@
     font-size: 14px;
     font-weight: var(--weight-medium);
     color: var(--cor-branco);
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1.3em 2.285em 1.3em;   
+        gap: 2em; 
+        flex-grow: 1;  
+    }       
+
+    .header {
+        flex: 0 0 100vw;
+    }
+
+    .main {
+        width: 40vw;
+    }
+    
 }
