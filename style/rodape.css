@@ -149,3 +149,25 @@
 .rodape__botao-menu:checked ~ .rodape__rotulo > .rodape__menu {
     background-image: url("../assets/menu\ ativo.svg");
 }
+
+@media screen and (min-width: 768px) {
+
+    .rodape {
+        height: 7em;
+    }
+
+    .rodape__calendario,
+    .rodape__clientes,
+    .rodape__relatorio {
+        width: 7em;
+        height: 5em;
+        background-size: 6em;
+    }
+    
+    .rodape__menu{
+        width: 7em;
+        height: 5em;
+        background-size: 4em;
+    }
+
+}
