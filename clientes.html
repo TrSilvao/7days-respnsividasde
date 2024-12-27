@@ -116,55 +116,74 @@
 
     </header>
 
-    <main class="conteudo">
+    <main class="conteudo__dois">
 
         <form action="" class="formulario">
 
-            <div class="form__nome campo">
+            <h1 class="cabeçalho__titulo">Cadastro de novos clientes</h1>
 
-                    <label for="name">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite o nome completo do paciente" required>            
+            <div class="campos">
 
-            </div>
+                <div class="form__nome campo">
 
-            <div class="form__tipo-consulta campo">
+                    <label class="label__formulario" for="name">Nome:</label>
+                    <input class="input__formulario" type="text" id="nome" name="nome" placeholder="Nome completo" required>            
+    
+                
+    
+                    <label class="label__formulario" for="tipo__consulta">Tipo de consulta:</label>
+    
+                    <select class="select__formulario" id="tipo__consulta" name="tipo__consulta" required>
+                            
+                        <option value="Presencial" >Presencial</option>
+    
+                        <option value="Por Vidio Chamada" >Por Vidio Chamada</option>
+    
+                    </select>
+    
+                </div>
 
-                    <label for="tipo__consulta">Selecione o tipo de consulta</label>
+                <div class="form__data-hora campo">
+    
+                    <label class="label__formulario" for="data">Data:</label>
+    
+                    <input class="input__formulario" type="date" id="data" name="data" required>
+    
+                    <label class="input__formulario" for="horario">Horário</label>
+    
+                    <input class="input__formulario" type="time" id="horario" name="horario" required>
+    
+                </div>
 
-                    <input type="radio" id="tipo__da-consulta" name="tipo__consulta" value="retorno" checked>Presencial
+                <div class="campo-opiniao">
 
-                    <input type="radio" id="tipo__da-consulta" name="tipo__consulta" value="retorno" checked>Por Vidio Chamada
+                    <label class="label__formulario" for="observações">Observações:</label>
 
-            </div>
+                    <textarea name="observações" id="observações" cols="30" rows="6" placeholder="Digite aqui observações sobre a consulta"></textarea>
 
-            <div class="form__data campo">
+                </div>
 
-                    <label for="data">Data</label>
-                    <input type="date" id="data" name="data" required>
-
-            </div>
-
-            <div class="form__horario campo">
-
-                    <label for="horario">Horário</label>
-                    <input type="time" id="horario" name="horario" required>
-
-            </div>
-
-            <div class="form__observações campo">
-
-                    <label for="observações">Observações</label>
-                    <textarea name="observações" id="observações" cols="30" rows="10" placeholder="Digite aqui observações sobre a consulta"></textarea>
             </div>
 
             <div class="form__botao campo">
 
-                    <button type="submit">Salvar</button>
+                <button class="botao__formulario" type="submit">Salvar</button>
 
             </div>
 
-        </form>        
+        </form>   
+        
+        <section class="clientes__cadastrados">
 
+            <div class="busca_clientes">
+                
+                <label for="busca">Pesquisa de clientes:</label>
+                <input type="query" class="pesquisa__clientes" name="busca" placeholder="Buscar cliente" required>
+
+            </div>
+
+        </section>
+        
     </main>
 
     <footer>
