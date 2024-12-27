@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma pagina responsiva que ajuda a marcar consultas? ">
+    <link rel="stylesheet" href="style/resete.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Clientes-7DaysOfCode - Mobile First</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="cabeçalho">
+
+            <div class="cabeçalho__conteudo-1">
+
+                <input type="checkbox" id="menu" class="cabeçalho__menu">
+            
+                <label for="menu" class="conteiner__rotulo">
+    
+                    <samp class="cabeçalho__menu-haburguer conteiner__img"></samp>
+    
+                </label>
+
+                <ul class="cabeçalho__menu-ativo">                    
+
+                    <li><input type="radio" name="cabeçalho1"  id="calendario" class="cabeçalho__botao-calendario">
+                    
+                    <label for="calendario" class="cabeçalho__rotulo">
+        
+                        <a href="index.html" class="cabeçalho__calendario icone__menu"></a>
+
+                        <samp class="menu__itens">Consultas</samp>
+        
+                    </label></li>
+        
+                    <li><input type="radio" name="cabeçalho1" id="clientes" class="cabeçalho__botao-clientes" checked>
+                    
+                    <label for="clientes" class="cabeçalho__rotulo">
+        
+                        <a href="clientes.html" class="cabeçalho__clientes icone__menu"></a>
+
+                        <samp class="menu__itens">Clientes</samp>
+        
+                    </label></li>
+        
+                    <li><input type="radio" name="cabeçalho1" id="relatorio" class="cabeçalho__botao-relatorio">
+                    
+                    <label for="relatorio" class="cabeçalho__rotulo">
+        
+                        <a href="relatorio.html" class="cabeçalho__relatorio icone__menu"></a>
+
+                        <samp class="menu__itens">Relatorios</samp>
+        
+                    </label></li>        
+                
+                </ul>
+
+            </div>
+
+            <div class="cabeçalho__conteudo-2">
+
+                <img class="cabeçalho__img" src="assets/perfil-1.svg" alt="Foto de perfil da medica Sonia, uma mulher negra.">
+
+                <div class="cabeçalho__conteudo">
+    
+                    <h1 class="cabeçalho__titulo">Olá, Sônia</h1>
+    
+                    <samp class="cabeçalho__texto">Mais 4 consultas hoje</samp>
+    
+                </div>
+                
+            </div>
+
+            <div class="cabeçalho__conteudo-3">
+
+                <ul class="cabeçalho__menu-1024">                    
+
+                    <li><input type="radio" name="cabeçalho1"  id="calendario" class="cabeçalho__botao-calendario">
+                    
+                    <label for="calendario" class="cabeçalho__rotulo">
+        
+                        <a href="index.html" class="cabeçalho__calendario icone__menu"></a>
+
+                        <a href="index.html" class="menu__itens">Consultas</a>
+        
+                    </label></li>
+        
+                    <li><input type="radio" name="cabeçalho1" id="clientes" class="cabeçalho__botao-clientes" checked>
+                    
+                    <label for="clientes" class="cabeçalho__rotulo">
+        
+                        <a href="clientes.html" class="cabeçalho__clientes icone__menu"></a>
+
+                        <a href="clientes.html" class="menu__itens">Clientes</a>
+        
+                    </label></li>
+        
+                    <li><input type="radio" name="cabeçalho1" id="relatorio" class="cabeçalho__botao-relatorio">
+                    
+                    <label for="relatorio" class="cabeçalho__rotulo">
+        
+                        <a href="relatorio.html" class="cabeçalho__relatorio icone__menu"></a>
+
+                        <a href="relatorio.html" class="menu__itens">Relatorios</a>
+        
+                    </label></li>        
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="conteudo">
+
+        <form action="" class="formulario">
+
+            <div class="form__nome campo">
+
+                    <label for="name">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome completo do paciente" required>            
+
+            </div>
+
+            <div class="form__tipo-consulta campo">
+
+                    <label for="tipo__consulta">Selecione o tipo de consulta</label>
+
+                    <input type="radio" id="tipo__da-consulta" name="tipo__consulta" value="retorno" checked>Presencial
+
+                    <input type="radio" id="tipo__da-consulta" name="tipo__consulta" value="retorno" checked>Por Vidio Chamada
+
+            </div>
+
+            <div class="form__data campo">
+
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+
+            </div>
+
+            <div class="form__horario campo">
+
+                    <label for="horario">Horário</label>
+                    <input type="time" id="horario" name="horario" required>
+
+            </div>
+
+            <div class="form__observações campo">
+
+                    <label for="observações">Observações</label>
+                    <textarea name="observações" id="observações" cols="30" rows="10" placeholder="Digite aqui observações sobre a consulta"></textarea>
+            </div>
+
+            <div class="form__botao campo">
+
+                    <button type="submit">Salvar</button>
+
+            </div>
+
+        </form>        
+
+    </main>
+
+    <footer>
+
+        <section>
+
+            <div class="botao__plus">    
+            
+                <input type="radio" name="bolhas" id="mais" class="botao__mais-checkbox">
+    
+                <label for="mais" class="botao__mais__rotulo">
+    
+                    <samp class="botao__mais botao__img"></samp>
+    
+                </label>
+    
+                <section class="tela__escura"></section>
+
+                <ul class="botoes__plus-ativo">
+    
+                    <li class="botao__novo-endereço">
+    
+                        <input type="radio" name="bolhas" id="endereço" class="botao__mais__botao">
+    
+                        <label for="endereço" class="botao__mais-rotulo">
+            
+                            <samp class="botao__new-endereço botao__img"></samp>
+            
+                        </label>
+    
+                    </li>
+    
+                    <li class="botao__novo-video">
+    
+                        <input type="radio" name="bolhas" id="video" class="botao__mais__botao">
+    
+                        <label for="video" class="botao__mais-rotulo">
+    
+                            <samp class="botao__new-video botao__img"></samp>
+    
+                        </label>
+    
+                    </li>
+
+                    <li class="botao__remover">
+    
+                        <input type="radio" name="bolhas" id="remover" class="botao__mais__botao">
+    
+                        <label for="remover" class="botao__mais-rotulo">
+    
+                            <samp class="botao__new-remover botao__img"></samp>
+    
+                        </label>
+    
+                    </li>
+    
+                </ul>
+    
+            </div>
+
+        </section>
+
+
+        <section class="rodape">
+
+            <input type="radio" name="rodape"  id="calendario" class="rodape__botao-calendario">
+            
+            <label for="calendario" class="rodape__rotulo">
+
+                <a href="index.html" class="rodape__calendario rodape__img" ></a>
+
+            </label>
+
+            <input type="radio" name="rodape" id="clientes" class="rodape__botao-clientes"  checked>
+            
+            <label for="clientes" class="rodape__rotulo">
+
+                <a href="clientes.html" class="rodape__clientes rodape__img" ></a>
+
+            </label>
+
+            <input type="radio" name="rodape" id="relatorio" class="rodape__botao-relatorio">
+            
+            <label for="relatorio" class="rodape__rotulo">
+
+                <samp class="rodape__relatorio rodape__img" ></samp>
+
+            </label>
+
+            <input type="radio" name="rodape" id="menu" class="rodape__botao-menu">
+            
+            <label for="menu" class="rodape__rotulo">
+
+                <samp class="rodape__menu rodape__img" ></samp>
+
+            </label>
+
+        </section>
+
+    </footer>
+    
+</body>
+</html>
+

@@ -5,14 +5,53 @@
     gap: 1em;
 }
 
+.cabeçalho__menu-ativo {
+    display: none;
+    position: absolute;
+    width: 43vw;
+    padding: 2em;
+    z-index: 10;
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-botao-endereço);
+    flex-direction: column;
+}
+
+.cabeçalho__rotulo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu__itens {
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.cabeçalho__conteudo {
+    padding-top: 0.7em ;
+    padding-left: 0.5em;
+}
+
 .cabeçalho__img {
     width: 57px;
     border-radius: 100%;
 }
 
-.cabeçalho__conteudo {
-    padding-right: 7.5em;
+.cabeçalho__conteudo-2 {
+    display: flex;
 }
+
+.cabeçalho__menu-haburguer {
+    display: none;
+    width: 4em;
+    height: 4em;
+    background-image: url("../assets/menu\ \ inativo.svg");
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: 4em;
+}
+
 
 .cabeçalho__titulo {
     font-size: 22px;
@@ -22,4 +61,133 @@
 
 .cabeçalho__texto {
     color: var(--cor-texto-claro);
+}
+
+.cabeçalho__menu {
+    display: none;
+}
+
+
+.icone__menu {
+    width: 8em;
+    height: 9em;  
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3em ;
+}
+
+.cabeçalho__calendario {
+    background-image: url("../assets/calendarioicone\ inativo.svg");
+}
+
+.cabeçalho__clientes {
+    background-image: url("../assets/clientes\ icone\ inativo.svg");
+}
+
+.cabeçalho__relatorio {
+    background-image: url("../assets/relatorios\ icone\ inativo.svg");
+}
+
+.cabeçalho__menu { 
+    background-image: url("../assets/menu\ icone\ inativo.svg");
+}
+
+.cabeçalho__botao-calendario:checked ~ .cabeçalho__rotulo > .cabeçalho__calendario {
+    background-image: url("../assets/calendarioicone\ ativo.svg");
+}
+
+.cabeçalho__botao-clientes:checked ~ .cabeçalho__rotulo > .cabeçalho__clientes {
+    background-image: url("../assets/clientes\ icone\ ativo.svg");
+}
+
+.cabeçalho__botao-relatorio:checked ~ .cabeçalho__rotulo > .cabeçalho__relatorio {
+    background-image: url("../assets/relatorios\ icone\ ativo.svg");
+}
+
+.cabeçalho__botao-menu:checked ~ .cabeçalho__rotulo > .cabeçalho__menu {
+    background-image: url("../assets/menu\ ativo.svg");
+}
+
+.cabeçalho__menu-1024 {
+    display: none;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: var(--cor-branco);
+    border-top: 1px solid var(--cor-texto);
+    border-bottom: 1px solid var(--cor-texto);;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cabeçalho {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabeçalho__titulo {
+        font-size: 30px;
+    }
+
+    .cabeçalho__menu:checked ~ .cabeçalho__menu-ativo {
+        display: flex;       
+    }
+
+    .cabeçalho__menu:checked ~ .conteiner__rotulo > .cabeçalho__menu-haburguer {
+        background-image: url("../assets/menu\ ativo.svg");
+    }
+
+    .conteiner__img {
+        padding: 0.5em;
+    }
+
+    .cabeçalho__menu-haburguer {
+        display: block;
+    }
+
+    .cabeçalho__conteudo-2 {
+        width: 65%;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .cabeçalho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cabeçalho__conteudo-1 {
+        display: none;
+    }
+
+    .cabeçalho__conteudo-2 {
+        width: 60%;
+        padding-left: 20em;
+    }   
+
+    .cabeçalho__img {
+        width: 10em;
+    }
+
+    .cabeçalho__conteudo {
+        padding: 4em;
+    }
+
+    .cabeçalho__titulo {
+        font-size: 30px;
+    }
+
+    .cabeçalho__menu-1024 {
+        display: flex;
+    }
+
+    .icone__menu {
+        width: 2em;
+        height: 2em;
+        background-size: auto;
+        padding: 0.4em 0;
+    }
+
 }

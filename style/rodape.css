@@ -62,6 +62,7 @@
 
 .botao__mais-checkbox:checked ~ .botoes__plus-ativo {
     display: block;
+    list-style-type: none;
 }
 
 .botoes__plus-ativo {
@@ -90,48 +91,39 @@
 
 .botoes__plus-ativo,
 .botao__mais-checkbox,
+.cabeçalho__botao-calendario,
+.cabeçalho__botao-clientes,
+.cabeçalho__botao-relatorio,
+.rodape__botao-menu,
 .rodape__botao-calendario,
 .rodape__botao-clientes,
 .rodape__botao-relatorio,
-.rodape__botao-menu,
 .botao__mais__botao {
     display: none;
 }
 
-.rodape__calendario {
+.rodape__img {
     width: 4em;
-    height: 4em;
-    background-image: url("../assets/calendario\ inativo.svg");
+    height: 4em;    
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+}
+
+.rodape__calendario {
+    background-image: url("../assets/calendario\ inativo.svg");
 }
 
 .rodape__clientes {
-    width: 4em;
-    height: 4em;
     background-image: url("../assets/cliente\ inativo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
 }
 
 .rodape__relatorio {
-    width: 4em;
-    height: 4em;
     background-image: url("../assets/relatorios\ \ inativo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
 }
 
-.rodape__menu {
-    width: 4em;
-    height: 4em;
+.rodape__menu { 
     background-image: url("../assets/menu\ \ inativo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
 }
 
 .rodape__botao-calendario:checked ~ .rodape__rotulo > .rodape__calendario {
@@ -153,21 +145,17 @@
 @media screen and (min-width: 768px) {
 
     .rodape {
-        height: 7em;
+        display: none;
     }
+ 
+    .botao__plus {
+        display: none;
+    }
+ 
+}
 
-    .rodape__calendario,
-    .rodape__clientes,
-    .rodape__relatorio {
-        width: 7em;
-        height: 5em;
-        background-size: 6em;
-    }
-    
-    .rodape__menu{
-        width: 7em;
-        height: 5em;
-        background-size: 4em;
-    }
+@media screen and (min-width: 1024px) {
+
+
 
 }
